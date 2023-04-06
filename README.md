@@ -2,13 +2,26 @@
 Terraform is an open-source infrastructure as code (IaC) tool that enables you to define and manage cloud infrastructure resources using a declarative configuration language. It supports multiple cloud platforms, including Microsoft Azure.
 
 ## How it works on Azure
-Here are some details on using Terraform with Azure:
-
 In summary, using Terraform with Azure can help you automate the deployment and management of your Azure resources, while also providing greater control and reproducibility over your infrastructure.
+
+## What this project will do
+In this article, you'll learn how to:
+
+- Create a virtual network
+- Create a subnet
+- Create a public IP address
+- Create a network security group and SSH inbound rule
+- Create a virtual network adapter card
+- Connect the network security group to the network adapter
+- Create a storage account for boot diagnostics
+- Create SSH key
+- Create a virtual machine
+- Use SSH to connect to the virtual machine
 
 ## Table of Contents
 - [Terraform Azure Provisioning Virtual Machines](#terraform-azure-provisioning-virtual-machines)
   - [How it works on Azure](#how-it-works-on-azure)
+  - [What this project will do](#what-this-project-will-do)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
