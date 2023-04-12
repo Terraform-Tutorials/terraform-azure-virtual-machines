@@ -24,12 +24,26 @@ In this article, you'll learn how to:
   - [What this project will do](#what-this-project-will-do)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
+  - [Connect into the Virtual Instances](#connect-into-the-virtual-instances)
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [License](#license)
 
 ## Installation
 You need to first install Terraform on your local machine or a build server. You can download Terraform from the official website or use a package manager like Homebrew.
+
+## Connect into the Virtual Instances
+- First you need to run the `terraform output` command to get the SSH key:
+
+`terraform output -raw tls_private_key > id_rsa`
+
+- Run the terraform command below to check more details:
+
+`terraform output public_ip_address`
+
+- Use the SSH to connect into the instance:
+
+`ssh -i id_rsa azureuser@<public_ip_address>`
 
 ## Usage
 - Azure Account: You must have an active Microsoft Azure account. If you do not have one already, you can sign up for a free Azure trial account.
