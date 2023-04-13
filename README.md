@@ -64,7 +64,7 @@ You need to first install Terraform on your local machine or a build server. You
 Guidelines for contributing to your project go here.
 
 ## License
-GitHub GLP License.
+GitHub GPL License.
 
 
 
